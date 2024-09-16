@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+nav {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-size: larger;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.section1,
+.section2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#email {
+    width: 18rem;
+    height: 2.5rem;
+}
+
+#submit {
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+.img {
+    width: 30rem;
+}
+
+.section2 {
+    margin-top: 5rem;
+    background-image: url(Images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article {
+    border: none;
+    width: 20rem;
+    height: 11rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 3px;
+}
+
+.avatar {
+    width: 2rem;
+    border-radius: 50%;
+    float: left;
+}
+
+.profile_text {
+    margin-left: 4rem;
+    line-height: 0.3rem;
+}
+
+.p_text1 {
+    font-size: 0.8rem;
+}
+
+.p_text2 {
+    font-size: 0.6rem;
+}
+
+.article_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.quote {
+    width: 1rem;
+}
+
+#email2 {
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#submit2 {
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: rgb(84, 84, 166);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section4 {
+    padding: 4rem;
+    background-color: rgb(4, 2, 69);
+    color: white;
+}
+
+.section4_f {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.section4_f div:nth-child(1) li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.section4_f div:nth-child(1) li img {
+    height: 1rem;
+}
+
+#bar {
+    display: none;
+}
+
+/* phone view */
+
+@media (max-width:600px) {
+    nav {
+        display: none;
+    }
+
+    #bar {
+        font-size: 3rem;
+        display: block;
+    }
+
+    .section1,
+    .section2 {
+        text-align: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    #email {
+        width: 22.5rem;
+    }
+
+    #submit {
+        width: 23rem;
+        margin-top: 1rem;
+    }
+
+    form {
+        margin: 2rem;
+    }
+
+    .link {
+        justify-content: center;
+    }
+
+    .img {
+        width: 25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .text1 {
+        width: 25rem;
+    }
+
+    .section3 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #submit2 {
+        width: 25rem;
+    }
+
+    .section4_f {
+        flex-direction: column;
+    }
+
+}
